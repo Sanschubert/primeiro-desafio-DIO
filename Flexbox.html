@@ -1,0 +1,119 @@
+<>0-display-flex.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - DISPLAY FLEX </title>
+    <style>
+         //classe flex(para proporcionar o tamanho no container)
+        .flex{
+             max-width: 300px;
+             padding: 10px;
+             border: 2px solid black;
+             display: flex;
+             }
+        .item{
+             background-color: aqua;
+             margin: 5px;
+             }
+   </style>
+ </head>
+ <body>
+   <div>  
+        div.item*3// auto completar o atalho para classe item(orientação item para direcionamento no container "row", "row-reverse"=horizontal; "column","column-reverse"= coluna;)
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>      
+   </div>
+ </body>
+ </html>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<>1-flex-direction.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX DIRECTION </title>
+    <style>
+         //classe flex(para proporcionar o tamanho no container)
+        .flex-container{
+             margin: 0;
+             padding: 0;
+             display: flex;
+             list-style: none;
+             }
+        .flex-item{
+             background: blue;
+             heigth: 50px;
+             width: 50px;
+             line-heigth: 50px;
+             fonte-size: 20px;
+             color: white;
+             text-align: center;
+             margin: 5px;
+             }
+    // auto completar o atalho para classe item(orientação de direção de item para direcionamento no container "row", "row-reverse"=horizontal; "column","column-reverse"= coluna;)
+        .row{
+             flex-direction:row;
+      }
+      
+        .row-reverse{
+             flex-direction:row-reverse;
+      }
+        .row-reverse li{
+             background-color: red;
+      }
+        .column{
+          float:left;
+          flex-direction:column;
+      }
+        .column li{
+             background: orange;
+      }
+        .column-reverse{
+          float:right;
+          flex-direction:column-reverse;
+      }   
+        .column-reverse li{
+             background: purple;
+      }
+   </style>
+ </head>
+ <body>
+      <ul class="flex-container row">
+        li*5//replica 5 vezes a linha       
+         <li class="flex-item">1</li>   
+         <li class="flex-item">2</li>   
+         <li class="flex-item">3</li>  
+         <li class="flex-item">4</li>
+         <li class="flex-item">5</li> 
+      </ul>
+   <ul class="flex-container row-reverse">
+        li*5//replica 5 vezes a linha       
+         <li class="flex-item">1</li>   
+         <li class="flex-item">2</li>   
+         <li class="flex-item">3</li>  
+         <li class="flex-item">4</li>
+         <li class="flex-item">5</li> 
+     
+           <ul class="flex-container column">
+        li*5//replica 5 vezes a linha       
+         <li class="flex-item">1</li>   
+         <li class="flex-item">2</li>   
+         <li class="flex-item">3</li>  
+         <li class="flex-item">4</li>
+         <li class="flex-item">5</li> 
+      </ul>
+   <ul class="flex-container column-reverse">
+        li*5//replica 5 vezes a linha       
+         <li class="flex-item">1</li>   
+         <li class="flex-item">2</li>   
+         <li class="flex-item">3</li>  
+         <li class="flex-item">4</li>
+         <li class="flex-item">5</li> 
+      </ul>
+      </ul>
+ </body>
+ </html>
