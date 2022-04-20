@@ -117,3 +117,76 @@
       </ul>
  </body>
  </html>
+---------------------------------------------------------------------------------------------------------------
+
+<>2-flex-wrap.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX WRAP </title>
+    <style>
+           //classe flex(para proporcionar o tamanho no container)
+        .flex-container{
+         	display: flex;
+          heigth: 150px;
+          border: 2px solid black;
+          max-width: 310px;
+          flex-direction:column;
+     }
+       .item{
+          fonte-size: 20px;
+          heigth: 50%;
+          text-align: center;
+          min-width: 100px;
+          line-heigth: 50px;
+     }
+      .nowrap{
+          flex-wrap:nowrap;
+          
+     }
+       .wrap{
+          flex-wrap:wrap;         
+     }
+      }
+       .wrap-reverse{
+          flex-wrap:wrap-reverse;         
+     }
+     .blue{
+           background-color: blue;
+     }
+      .green{
+           background-color: ligthgreen;
+     }
+        .oramge{
+           background-color: oramgered;
+     }
+        </style>
+ </head>
+      <body>
+       <hi>mo wrap</hi>
+       <div classs="flex-container nowrap">
+       <div class="item orange">item 1</div>
+       <div class="item green">item 2</div>
+       <div class="item blue">item 3</div>   
+       <div class="item orange">item 4</div>
+       </div>   
+       <hi> wrap</hi>
+       <div classs="flex-container wrap">
+       <div class="item green">item 1</div>
+       <div class="item blue">item 2</div>
+       <div class="item orange">item 3</div>  
+       <div class="item orange">item 4</div>
+       </div>   
+       <hi> wrap reverse</hi>
+       <div classs="flex-container wrap-reverse">
+       <div class="item green">item 1</div>
+       <div class="item blue">item 2</div>
+       <div class="item orange">item 3</div>  
+       <div class="item orange">item 4</div>
+       </div>   
+      
+      
+      </body>
+ </html
