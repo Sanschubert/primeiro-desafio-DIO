@@ -190,3 +190,478 @@
       
       </body>
  </html
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+3-flex-flow.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX FLOW</title>
+    <style>
+           //classe flex(para proporcionar o tamanho no container)
+        .flex-container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 500px;
+          margin-botton: 10px;
+          heigth: 200px;
+          
+
+          flex-direction:column;
+     }
+       .default{
+          flex=flow: row nowrap;
+
+}
+     .wrap{
+          flex-flow: row wrap;         
+     }
+     .wrap-reserve{
+          flex-flow: row wrap-reverse;         
+     }
+     .r-nowrap{
+          flex-flow: row -reverse nowrap;         
+     }
+     .r-wrap{
+          flex-flow: row-reverse wrap;         
+     }
+     .rr-wrap{
+          flex-flow: row-reverse wrap-reverse;         
+     }
+       .item{
+          background-color: blueviolet;
+          margin: 5px;
+          color:white;
+          text-align: center;
+          width: 100px;
+          heigth: 50px;
+          line-heigth: 50px;
+     }
+        </style>
+ </head>
+      <body>
+       <hi>default: row nowrap</hi>
+       <div classs="flex-container default">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        </div>   
+       <hi>wrap </hi>
+       <div classs="flex-container wrap">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        </div>   
+        <hi>wrap-reverse </hi>
+       <div classs="flex-container wrap-reverse">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        </div>   
+        <hi>row-reverse nowrap</hi>
+       <div classs="flex-container r-nowrap">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        </div>   
+ 
+        <hi>row-reverse wrap</hi>
+       <div classs="flex-container r-wrap">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        </div>   
+ 
+        <hi>row-reverse wrap-reserve</hi>
+       <div classs="flex-container rr-wrap">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        </div>   
+     </body>
+ </html>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4-justify-content.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - JUSTIFY CONTENT</title>
+    <style>
+           //classe flex(para proporcionar o tamanho no container)
+        .container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 400px;
+          margin: 0;
+     }
+       .item{
+          background-color: blueviolet;
+          margin: 5px;
+          color:white;
+          text-align: center;
+
+          width: 100px;
+          heigth: 50px;
+          line-heigth: 50px;
+     }
+   .flex-start{
+          justify-content: flex-start;         
+     }
+   .flex-end{
+          justify-content: flex-end;         
+     }
+   .center{
+          justify-content: center;         
+     }
+   .space-between{
+          justify-content: space-between;         
+     }
+   .space-around{
+          justify-content: space-around;         
+     }
+   .column{
+            flex-direction: column;
+            min-height: 200px;
+     }
+
+        </style>
+ </head>
+
+     <body>
+      <h1> row </h1>
+      <p> flex-start </p>  
+      <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+      </section>     
+      <p>  flex-end   </p>  
+      <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+      </section> 
+      <p> center </p>  
+      <section class="container center">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>
+      <p> space-between </p>  
+      <section class="container space-between">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>
+
+      <p> space-around </p>  
+      <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>
+      
+      <h1> column </h1>
+      <p> flex-start (column)</p>  
+      <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div>  
+        <div class="item">4</div>
+        <div class="item">5</div>    
+      </section>        
+      <p> flex-end (column)</p>  
+      <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div>  
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>   
+      <p> center (column)</p>  
+      <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div>  
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>  
+      <p> space-between (column) </p>  
+      <section class="container space-between column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>
+
+      <p> space-around (column) </p>  
+      <section class="container space-around column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item"> outro item</div> 
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </section>
+           
+     </body>
+ </html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5-align-items.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - ALIGN ITEM</title>
+    <style>
+
+        .container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 350px;
+     }
+       .item{
+          background-color: blueviolet;
+          margin: 5px;
+          color:white;
+          text-align: center;
+          flex: 1 ;         
+     }
+     .center{
+          align-items: center;         
+     }
+   .stretch{
+          align-items: stretch;         
+     }  
+     .start{
+          align-items:flex-start;         
+     }
+     .end{
+          align-items: flex-end;         
+     }
+     .baseline{
+          align-items: baseline;   
+     }
+     .column{
+            flex-direction: column;
+            min-height: 200px;
+     }
+     .central{
+          height: 300px;
+          justify-content: center; 
+
+     }
+       .central .item{
+        flex: 0 ;
+        pagging: 20px;
+     }
+        
+        </style>
+ </head>
+
+     <body>
+       <h1> row </h1>
+      <p> center </p>  
+      <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>
+      <p> stretch </p>       
+      <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>
+      <p> flex-start </p>  
+      <section class="container center start">
+        <div class="item">Item 1</div>
+       <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>     
+      <p> flex-end </p>  
+      <section class="container center end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>         
+      <p> baseline </p>  
+      <section class="container center baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>  
+      
+      <h1> column </h1>        
+      <p> flex-start </p>  
+      <section class="container start column">
+        <div class="item">Item 1</div>
+       <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>     
+      <p> flex-end </p>  
+      <section class="container end column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>                
+      <p> baseline </p>  
+      <section class="container center baseline column">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum texto Lipsum</div> 
+      </section>  
+       <p> alinhamento central a tela </p>  
+      <section class="container central center ">
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+      </section>  
+     </body>
+ </html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+6-align-content.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - ALIGN CONTENT</title>
+    <style> 
+        .container{
+          height: 350px;
+          max-width: 300px;
+          margin: 0 auto;       
+          display: flex;
+          flex-wrap: wrap;
+          border: 1px solid black;
+     }
+       .item{
+          background-color: orangered;
+          flex: 1 ;
+          pagging: 0 5px;
+          color:white;
+          text-align: center;
+    }
+      .stretch{
+          align-content: stretch;         
+     }  
+     .center{
+          align-content: center;         
+     }
+     .flex-start{
+          align-content:flex-start;         
+     }
+     .flex-end {
+          align-content: flex-end;         
+     }     
+     .space-around{
+          align-content: space-around;         
+     }
+     .space-between{
+          align-content: space-between;         
+     }
+     
+ </style>
+ </head>
+
+     <body>
+       <h1> row </h1>
+      <p> stretch </p>  
+      <section class="container stretch">
+        <div class="item">Lorem ipsum is therefore always free from </div>
+        <div class="item">Lorem ipsum is therefore</div>
+        <div class="item">Lorem ipsum is therefore always free</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour</div> 
+        <div class="item">Lorem ipsum is therefore always free from repetition</div> 
+        <div class="item">Lorem ipsum is therefore </div> 
+      </section>    
+      <p> center </p>  
+      <section class="container center">
+        <div class="item">Lorem ipsum is therefore always free from </div>
+        <div class="item">Lorem ipsum is therefore</div>
+        <div class="item">Lorem ipsum is therefore always free</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour</div> 
+        <div class="item">Lorem ipsum is therefore always free from repetition</div> 
+        <div class="item">Lorem ipsum is therefore </div> 
+      </section>
+      <p> flex-start </p>  
+      <section class="container flex-start">
+       <div class="item">Lorem ipsum is therefore always free from </div>
+        <div class="item">Lorem ipsum is therefore</div>
+        <div class="item">Lorem ipsum is therefore always free</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour</div> 
+        <div class="item">Lorem ipsum is therefore always free from repetition</div> 
+        <div class="item">Lorem ipsum is therefore </div> 
+      </section>      
+      <p>  flex-end   </p>  
+      <section class="container flex-end">
+        <div class="item">Lorem ipsum is therefore always free from </div>
+        <div class="item">Lorem ipsum is therefore</div>
+        <div class="item">Lorem ipsum is therefore always free</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour</div> 
+        <div class="item">Lorem ipsum is therefore always free from repetition</div> 
+        <div class="item">Lorem ipsum is therefore </div> 
+      </section>  
+      <p> space-around </p>  
+      <section class="container space-around">
+        <div class="item">Lorem ipsum is therefore always free from </div>
+        <div class="item">Lorem ipsum is therefore</div>
+        <div class="item">Lorem ipsum is therefore always free</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour</div> 
+        <div class="item">Lorem ipsum is therefore always free from repetition</div> 
+        <div class="item">Lorem ipsum is therefore </div>
+        </section>  
+      <p> space-between </p>  
+      <section class="container space-between">
+        <div class="item">Lorem ipsum is therefore always free from </div>
+        <div class="item">Lorem ipsum is therefore</div>
+        <div class="item">Lorem ipsum is therefore always free</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour, or non-characteristic words etc</div>
+        <div class="item">Lorem ipsum is therefore always free from repetition, injecter humour</div> 
+        <div class="item">Lorem ipsum is therefore always free from repetition</div> 
+        <div class="item">Lorem ipsum is therefore </div>
+       </section>  
+        
+     </body>
+ </html>
+
