@@ -665,3 +665,479 @@
      </body>
  </html>
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+7-flex.grow.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+<meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX GROW</title>
+    <style> 
+  
+   .flex-container{
+          display: flex;
+          border: 2px solid black;
+          max-width: 300px;
+          margin-bottom: 20px;
+     
+     }
+       .item{
+          background-color: orangered;
+          margin: 5px;
+          padding: 10px;
+          text-align: center;
+          color: white;
+       }
+     .fg-0{
+         flex-grow:0;
+     }
+     .fg-1{
+         flex-grow:1;
+     }
+      .fg-2{
+          flex-grow:2;
+     }
+     
+      .fg-3{
+          flex-grow:3;
+     }
+   </style>
+ </head>
+
+     <body>
+      <p>flex grow:0</p>
+       <div classs="flex-container">
+       <div class="item fg-0">A</div>
+       <div class="item fg-0">B</div>
+       <div class="item fg-0">C</div>   
+       <div class="item fg-0">D</div>
+       </div>   
+       <hi> flex grow:1</hi>
+       <div classs="flex-container">
+       <div class="item fg-1">A</div>
+       <div class="item fg-2">B</div>
+       <div class="item fg-3">C</div>   
+       <div class="item fg-4">D</div>
+       </div>   
+       <hi> flex grow:2</hi>
+       <div classs="flex-container">
+       <div class="item fg-2">A</div>
+       <div class="item fg-2">B</div>
+       <div class="item fg-2">C</div>   
+       <div class="item fg-2">D</div>
+       </div>   
+       <hi> flex grow:3</hi>
+       <div classs="flex-container">
+       <div class="item fg-3">A</div>
+       <div class="item fg-3">B</div>
+       <div class="item fg-3">C</div>   
+       <div class="item fg-3">D</div>
+       </div>   
+      </body>
+ </html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+8-flex-basis.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+<meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX BASIS</title>
+    <style> 
+  
+   .flex-container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 350px;
+          margin-bottom: 20px;
+     
+     }
+       .items{
+          background-color: coral;
+          margin: 5px;
+          text-align: center;
+          color: white;
+       }
+     .bauto{
+         flex-basis:auto;
+     }
+     .fg-0{
+         flex-grow:0;
+     }
+     .fg-1{
+         flex-grow:1;
+     }
+      .fg-2{
+          flex-grow:2;
+     }
+   </style>
+ </head>
+
+     <body>
+      <p>auto</p>
+       <div classs="flex-container">
+       <div class="items bauto fg-1">A</div>
+       <div class="items bauto fg-1">BBB</div>
+       <div class="items bauto fg-1">C</div>   
+       <div class="items bauto fg-2">DEF</div>
+       </div>   
+      <p>0 (zero)</p>
+       <div classs="flex-container">
+       <div class="items b-0 fg-1">A</div>
+       <div class="items b-0 fg-1">BBB</div>
+       <div class="items b-0 fg-1">C</div>   
+       <div class="items b-0 fg-1">DEF</div>
+       </div>   
+       <p>basis +  width</p>
+       <div classs="flex-container">
+       <div class="items w100 fg-0">A</div>
+       <div class="items w100 fg-0">BBB</div>
+       <div class="items w100 fg-0">C</div>   
+       <div class="items w100 fg-0">DEF</div>
+       </div>   
+        </body>
+ </html>
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+9-flex-shrink.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+<meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX SHRINK</title>
+    <style> 
+
+
+   .flex-container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 300px;
+          margin-bottom: 10px;     
+       }
+       .item{
+          background-color: orangered;
+          margin: 5px;
+          text-align: center;
+          margin: 5px;
+       }
+      .s-0{
+         flex-shrink: 0;
+         flex-basis: 200px;
+     }
+     .s-1{
+         flex-shrink: 1;
+         flex-basis: 100px;
+     }
+       .s-2{
+         flex-shrink: 2;
+         flex-basis: 100px;
+     }
+       .s-3{
+         flex-shrink: 3;
+         flex-basis: 200px;
+     }
+     .fg-0{
+         flex-grow: 0;
+     }
+     .fg-1{
+         flex-grow: 1;
+     }
+      .fg-2{
+          flex-grow: 2;
+     }
+     
+   </style>
+ </head>
+
+     <body>
+      <p>flex-shrink: 1</p>
+       <div classs="flex-container">
+       <div class="item s-1 fg-1">A</div>
+       <div class="item s-1 fg-1">B</div>
+       <div class="item s-1 fg-1">C</div>   
+       <div class="item s-1 fg-1">D</div>
+       <div class="item s-1 fg-1">E</div>
+       </div>   
+       <div classs="flex-container">
+       <div class="item s-1 fg-1">A</div>
+       <div class="item s-1 fg-1">The generated</div>
+       <div class="item s-1 fg-1">C</div>   
+       <div class="item s-1 fg-1">D</div>
+       </div>   
+       <p>flex-shrink: 0 / basis 100px</p>
+       <div classs="flex-container">
+       <div class="item s-0 fg-1">A</div>
+       <div class="item s-0 fg-1">B</div>
+       <div class="item s-0 fg-1">C</div>   
+       <div class="item s-0 fg-1">D</div>
+       </div>   
+      <p>flex-shrink: mix / basis 100px</p>
+       <div classs="flex-container">
+       <div class="item s-1 fg-1">A</div>
+       <div class="item s-2 fg-1">The generated</div>
+       <div class="item s-2 fg-1">C</div>   
+       <div class="item s-3 fg-1">D</div>
+       </div>  
+        </body>
+ </html>
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+10-flex.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+<meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - FLEX </title>
+    <style> 
+    
+   .flex-container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 400px;
+          margin-bottom: 15px;     
+       }
+       .item{
+          background-color: brown;
+          color: white;
+          font-size: 24 px;
+          text-align: center;
+          margin: 5px;
+
+       }
+       .flex-1{
+          flex: 1;
+          /*grow=1, shrink=1, basis= 0*/
+     }
+      .largura{
+          width: 200px;
+       /*min- width: 250px;*/
+         
+     
+     }
+      .flex-2{
+          flex: 2;
+          /*grow=2, shrink=1, basis= 0*/
+   </style>
+ </head>
+
+     <body>
+      <p>flex: 1</p>
+       <div classs="flex-container">
+       <div class="item flex-1">A</div>
+       <div class="item flex-1">BBB</div>
+       <div class="item flex-1">CC</div>   
+       <div class="item flex-1">D</div>
+       <div class="item flex-1">EF</div>
+       </div>   
+       <p>flex: mix</p>
+       <div classs="flex-container">
+       <div class="item flex-1">A</div>
+       <div class="item flex-2">BBB</div>
+       <div class="item flex-2">CC</div>   
+       <div class="item flex-1">D</div>
+       <div class="item flex-1">EF</div>
+       </div>
+       <p>width ignorado -> basis = 0</p>
+       <div classs="flex-container">
+       <div class="item flex-1">A</div>
+       <div class="item flex-1">BBB</div>
+       <div class="item flex-1">CC</div>   
+       <div class="item flex-1">D</div>
+       <div class="item flex-1">EF</div>
+       </div>
+      
+        </body>
+ </html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+11-order.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <DOCTYPE html>
+ <lang="en">
+ <head>
+<meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - ORDER </title>
+    <style> 
+    
+   .flex-container{
+          display: flex;
+          border: 1px solid black;
+          max-width: 350px;
+          margin-bottom: 20px;     
+       }
+       .item{
+          flex: 1;
+          background-color: brown;
+          color: white;
+          font-size: 24 px;
+          text-align: center;
+          margin: 5px;
+
+       }
+        .o1{ 
+         order: 1;
+     }
+      .o2{
+         order: 2;
+     }
+      .o3{ 
+         order: 3;
+     }
+     .o4{ 
+         order: 4;
+     }
+     .direction{
+         flex-direction: column;
+     }
+     
+ 
+   </style>
+ </head>
+
+     <body>
+       <h1> row </h1>
+       <p>order: 0</p>
+       <div classs="flex-container">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>   
+       <div class="item">4</div>
+       <div class="item">4n</div>   
+       <div class="item">4m</div>
+       </div>   
+       <p>orders: diferentes</p>
+       <div classs="flex-container">
+       <div class="item o3">1</div>
+       <div class="item o2">4</div>
+       <div class="item o3">4n</div>   
+       <div class="item o1">4m</div>
+       </div>   
+      
+      
+       <h1> column </h1>
+       <p>order: 0</p>
+       <div classs="flex-container direction">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>   
+       <div class="item">4</div>
+       <div class="item">4n</div>   
+       <div class="item">4m</div>
+       </div>   
+       <p>orders: diferentes</p>
+       <div classs="flex-container direction">
+       <div class="item o3">1</div>
+       <div class="item o2">4</div>
+       <div class="item o3">4n</div>   
+       <div class="item o1">4m</div>
+       </div>     
+        </body>
+ </html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+12-align-self.html>//CTRL+P Show Live Server Preview// carregar o atalho para carregar os arquivos
+ <!DOCTYPE html>
+ <lang="en">
+ <head>
+<meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width",
+    <title> FUNDAMENTOS - ALIGN SELF  </title>
+    <style> 
+    
+     .flex-container{
+          display: flex;
+          border: 1px solid;
+          max-width: 350px;
+          margin-bottom: 10px;     
+       }
+     . align-container{
+         align-items: flex-end;
+     }
+       .item{
+          flex: 1;
+          background-color: brown;
+          color: white;
+          font-size: 24 px;
+          text-align: center;
+       }
+      .center{
+          align-self: center;
+     }
+      .start{
+          align-self: start;
+     }
+      .end{
+          align-self: end;
+     }
+      .baseline{
+          align-self: baseline;
+     }
+      .stretch{
+          align-self: stretch;
+     }
+      .auto{
+          align-self: auto;
+     }
+     
+     .direction{
+         flex-direction: column;
+     }
+      </style>
+ </head>
+
+     <body>     
+       <h1> row </h1>
+       <section classs="flex-container align-container">
+       <div class="item auto">AAA</div>
+       <div class="item auto">123</div>
+       <div class="item auto">Lorem ipsum is therefore always free ffrom repetition</div>   
+       <div class="item auto">Item 4</div>
+       </section>   
+       <section classs="flex-container">
+       <div class="item center">AAA</div>
+       <div class="item star">123</div>
+       <div class="item stretch">Lorem ipsum is therefore always free ffrom repetition</div>   
+       <div class="item end">Item 4</div>
+       </section>   
+       <section classs="flex-container">
+       <div class="item center">AAA</div>
+       <div class="item star">AAA</div>
+       <div class="item end">AAA</div>
+       <div class="item stretch">Lorem ipsum is therefore always</div>   
+       </section>   
+      
+        <h1> column </h1>
+       <section classs="flex-container align-container direction">
+       <div class="item auto">AAA</div>
+       <div class="item auto">123</div>
+       <div class="item auto">Lorem ipsum is therefore always free from repetition</div>   
+       <div class="item auto">Item 4</div>
+       </section>   
+       <section classs="flex-container direction">
+       <div class="item center">AAA</div>
+       <div class="item star">123</div>
+       <div class="item stretch">Lorem ipsum is therefore always free from repetition</div>   
+       <div class="item end">Item 4</div>
+       </section>   
+       <section classs="flex-container direction">
+       <div class="item center">AAA</div>
+       <div class="item star">AAA</div>
+       <div class="item end">AAA</div>
+       <div class="item stretch">Lorem ipsum is therefore always</div>   
+       </section>
+      </body>
+ </html>
+
